@@ -1,16 +1,16 @@
-def printSeriesIncrease(char, n):
+def printSeriesIncrease(c, n):
     for i in range(n):
-        print(char * i)
+        print(c * i)
     return
 
-def printSeriesDecrease(char, n):
+def printSeriesDecrease(c, n):
     for i in range(n, 0, -1):
-        print(char * i)
+        print(c * i)
     return
 
-char = input("Enter a character: ")
-n = int(input("Enter a Incremental series limit: "))
-m = int(input("Enter a decremental series limit: "))
+c = input("Enter a character: ")
+n = int(input("Enter a limit: "))
+m = int(input("Enter a limit: "))
 
-printSeriesIncrease(char, n)
-printSeriesDecrease(char, m)
+printSeriesIncrease(c, n)
+printSeriesDecrease(c, m)
